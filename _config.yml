@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: Airbnb in Toronto
 description: In this project I analyze Airbnb listings in relationship to housing market in Toronto.
+show_downloads: true
