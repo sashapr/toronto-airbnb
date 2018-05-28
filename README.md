@@ -1,15 +1,15 @@
 ## Description
 
-I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumptions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr). Here I outline main steps and key outcomes of my project.
+I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumptions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr). Here, I outline main steps and key outcomes of my project.
 
 
 ### Contents
-1. Scraping data from Airbnb site
-2. Cleaning data
-3. Visualizations and analysis
+I. Scraping data from Airbnb site
+II. Cleaning data
+III. Visualizations and analysis
 
 
-### Scraping data from Airbnb site
+### I. Scraping data from Airbnb site
 Airbnb site links have the following structure:
 - Page with listings for corresponding location: https://www.airbnb.ca/s/District--City--ST/homes  (where ST = State or Province)
 - Page with a specific listing: http://www.airbnb.ca/rooms/listing_id (where listing_id = integer ID)
