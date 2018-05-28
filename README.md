@@ -18,9 +18,9 @@ My first plan to get all the data:
 1. Go through all pages with listings for every district in Toronto to get IDs
 2. Go through every home individual page to get detailed information
 
-Then I realized that Airbnb has a limit in showing number of pages per district. For example, https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes shows 300+ homes, but user can browse only through 17 pages. So to get all homes, I need to apply additional filter within function which will scrape pages for IDs. Thus, if a district has more than 300 homes, I add pricing filter. For example, one of the pages I scrape may look: https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes?price_min=40&price_max=62. Pricing step changes dynamically to optimize the speed of scraping.
+Then I realized that Airbnb has a limit in showing number of pages per district. For example, https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes shows 300+ homes, but customer can browse only through first 17 pages (which is understandable, rarely we list through more pages and Airbnb can optimize its speed). To get all homes, I need to apply additional filter within function which will scrape pages for IDs. Thus, if a district has more than 300 homes, I add pricing filter. For example, one of the pages I scrape may look: https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes?price_min=40&price_max=62. Pricing step changes dynamically to optimize the speed of scraping. I start with average price and then decrease it by 2 in every iteration which returns more than 17 pages.
 
-While testing functions, I noticed that some listings may appear under different Districts. Therefore, I need additionally to get neighboorhood data by using latitude and longiture coordinates. I use geopy library to reverse scrape this information.
+Additionally, while testing functions, I noticed that some listings may appear under different Districts. Therefore, I need additionally to get neighboorhood data by using latitude and longiture coordinates. I use geopy library to reverse scrape this information.
 
 The updated scraping plan:
 1. Go through all pages with listings for every district in Toronto to get IDs, apply pricing filter where needed
