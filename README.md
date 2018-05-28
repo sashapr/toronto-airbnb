@@ -3,13 +3,13 @@
 I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumptions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr). Here, I outline main steps and key outcomes of my project.
 
 
-### Contents
-I. Scraping data from Airbnb site
-II. Cleaning data
-III. Visualizations and analysis
+## Contents
+I. Scraping data from Airbnb site <br/>
+II. Cleaning data <br/>
+III. Visualizations and analysis <br/>
 
 
-### I. Scraping data from Airbnb site
+## I. Scraping data from Airbnb site
 Airbnb site links have the following structure:
 - Page with listings for corresponding location: https://www.airbnb.ca/s/District--City--ST/homes  (where ST = State or Province)
 - Page with a specific listing: http://www.airbnb.ca/rooms/listing_id (where listing_id = integer ID)
@@ -32,9 +32,6 @@ The updated scraping plan:
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
 - Bulleted
 - List
