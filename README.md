@@ -1,14 +1,33 @@
 ## Description
 
-I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumtions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr)
+I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumptions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr). Here I outline main steps and key outcomes of my project.
 
-You can use the [editor on GitHub](https://github.com/sashapr/toronto-airbnb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Contents
+1. Scraping data from Airbnb site
+2. Cleaning data
+3. Visualizations and analysis
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Scraping data from Airbnb site
+Airbnb site links have the following structure:
+- Page with listings for corresponding location: https://www.airbnb.ca/s/District--City--ST/homes  (where ST = State or Province)
+- Page with a specific listing: http://www.airbnb.ca/rooms/listing_id (where listing_id = integer ID)
+
+My first plan to get all the data:
+1. Go through all pages with listings for every district in Toronto to get IDs
+2. Go through every home individual page to get detailed information
+
+Then I realized that Airbnb has a limit in showing number of pages per district. For example, https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes shows 300+ homes, but user can browse only through 17 pages. So to get all homes, I need to apply additional filter within function which will scrape pages for IDs. Thus, if a district has more than 300 homes, I add pricing filter. For example, one of the pages I scrape may look: https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes?price_min=40&price_max=62. Pricing step changes dynamically to optimize the speed of scraping.
+
+While testing functions, I noticed that some listings may appear under different Districts. Therefore, I need additionally to get neighboorhood data by using latitude and longiture coordinates. I use geopy library to reverse scrape this information.
+
+The updated scraping plan:
+1. Go through all pages with listings for every district in Toronto to get IDs, apply pricing filter where needed
+2. Go through every home individual page to get detailed information
+3. Add neighborhood data based on latitude and longitude coordinates using geopy library
+
+
 
 ```markdown
 Syntax highlighted code block
@@ -27,13 +46,3 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sashapr/toronto-airbnb/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
