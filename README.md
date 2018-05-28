@@ -11,10 +11,10 @@ III. Visualizations and analysis <br/>
 
 ## I. Scraping data from Airbnb site
 Airbnb site links have the following structure:
-- Page with listings for corresponding location: https://www.airbnb.ca/s/District--City--ST/homes  (where ST = State or Province)
+- Page with listings for corresponding location: <font color='green'>https://www.airbnb.ca/s/District--City--ST/homes</font>  (where ST = State or Province)
 - Page with a specific listing: http://www.airbnb.ca/rooms/listing_id (where listing_id = integer ID)
 
-My first plan to get all the data:
+Initial plan to get all the data:
 1. Go through all pages with listings for every district in Toronto to get IDs
 2. Go through every home individual page to get detailed information
 
