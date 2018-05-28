@@ -1,6 +1,6 @@
 ## Description
 
-I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumtions and model in a more detailed [document](https://github.com/sashapr/toronto-airbnb/blob/master/pdfs/Airbnb_in_Toronto_2018_05_21.pdf)
+I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumtions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr)
 
 You can use the [editor on GitHub](https://github.com/sashapr/toronto-airbnb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
