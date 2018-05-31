@@ -1,3 +1,4 @@
+## WORK IN PROGRESS
 ## Description
 
 I would like to understand Airbnb rental market in Toronto and how it is related to property prices. I describe assumptions and model in a more detailed [document](https://drive.google.com/open?id=1_KuIaytu1lvk99qkmY7KMDkgZK7leLmr). Here, I outline main steps and key outcomes of my project.
