@@ -45,3 +45,9 @@ Syntax highlighted code block
 ```
 
 ## II. Cleaning data
+
+## III. Visualizations and data analysis
+
+
+----------------------------------------------------
+This project is my first project in Python. I used coding structure from a similar project by Hamel Hussein & his colleages. They investigated Airbnb in Cambridge, MA with the goal to optimize the pricing for their listing. Functions were written in 2014 therefore, many libraries were outdated. Additionally, the structure of Airbnb pages changed, therefore I had to make numerous changes to the original code.
