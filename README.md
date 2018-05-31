@@ -42,4 +42,4 @@ Code
 
 
 ----------------------------------------------------
-This is my first major project in Python. I used coding structure from a class project by [Hamel Hussein](https://github.com/hamelsmu) & his colleagues. They investigated Airbnb in Cambridge, MA with the objective to optimize the pricing for their listing. Functions were written in 2014 therefore, many libraries were outdated. Additionally, the structure of Airbnb pages changed, therefore I had to make numerous changes to the original code.
+This is my first major project in Python. I used coding structure from a class project by [Hamel Hussein](https://github.com/hamelsmu) & his colleagues. They investigated Airbnb in Cambridge, MA with the objective to optimize the pricing for their listing. Functions were written in 2014 and as of now many libraries were outdated. Additionally, the structure of Airbnb pages changed, therefore I had to make numerous changes to the original code.
