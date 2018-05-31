@@ -6,7 +6,7 @@ I would like to understand Airbnb rental market in Toronto and how it is related
 ## Contents
 [I. Scraping data from Airbnb site](#i-scraping-data-from-airbnb-site) <br/>
 [II. Cleaning data](#ii-cleaning-data) <br/>
-III. Visualizations and analysis <br/>
+[III. Visualizations and analysis](#iii-visualizations-and-analysis) <br/>
 
 
 ## I. Scraping data from Airbnb site
@@ -50,4 +50,4 @@ Syntax highlighted code block
 
 
 ----------------------------------------------------
-This project is my first project in Python. I used coding structure from a similar project by Hamel Hussein & his colleages. They investigated Airbnb in Cambridge, MA with the goal to optimize the pricing for their listing. Functions were written in 2014 therefore, many libraries were outdated. Additionally, the structure of Airbnb pages changed, therefore I had to make numerous changes to the original code.
+This project is my first project in Python. I used coding structure from a similar project by [Hamel Hussein](https://github.com/hamelsmu) & his colleagues. They investigated Airbnb in Cambridge, MA with the goal to optimize the pricing for their listing. Functions were written in 2014 therefore, many libraries were outdated. Additionally, the structure of Airbnb pages changed, therefore I had to make numerous changes to the original code.
