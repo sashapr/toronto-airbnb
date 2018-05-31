@@ -15,13 +15,13 @@ Canadian Airbnb site links have the following structure:
 - Page with listings for corresponding location: <span style="color:MediumSeaGreen">`https://www.airbnb.ca/s/District--City--ST/homes`</span>  (where ST = State or Province, Districts = neighborhood within a City, for example Deerpark in city Toronto)
 - Page with a specific listing: <span style="color:MediumSeaGreen">`http://www.airbnb.ca/rooms/listing_id`</span> (where listing_id = integer ID)
 
-Initial plan to get all the data:
+This was the initial plan to get the data:
 1. Go through all pages with listings for every district in Toronto to get IDs
 2. Go through every home individual page to get detailed information
 
-Then I realized that Airbnb has a limit in showing number of pages per district. For example, <span style="color:MediumSeaGreen">`https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes`</span> shows 300+ homes, but customer can browse only through first 17 pages (which is understandable, rarely we list through more pages and Airbnb can optimize its speed). Thus, to get all homes, I need to apply additional filter within function which will scrape pages for IDs. I have chosen pricing filter. For example, one of the pages I scrape may look: <span style="color:MediumSeaGreen">`https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes?price_min=40&price_max=62`</span>. Pricing step changes dynamically to optimize the speed of scraping. I start with average price and then decrease it by 2 in every iteration which returns more than 17 pages.
+Then I realized that Airbnb has a limit in showing number of pages per district. For example, <span style="color:MediumSeaGreen">`https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes`</span> shows 300+ homes, but customer can browse only through the first 17 pages (which is understandable, rarely we list through more pages and therefore Airbnb can optimize its speed). Thus, to get all listings, I need to apply additional filter within function which scrapes pages for IDs. I have chosen pricing filter. For example, one of the pages I scrape may look: <span style="color:MediumSeaGreen">`https://www.airbnb.ca/s/Downtown-Toronto--Toronto/homes?price_min=40&price_max=62`</span>. Pricing step changes dynamically to optimize the speed of scraping. I start with average price and then decrease it by 2 in every iteration which returns more than 17 pages.
 
-Additionally, while testing functions, I noticed that some listings may appear under different Districts. Therefore, I need additionally to get neighboorhood data by using latitude and longiture coordinates. I use geopy library to reverse scrape this information.
+Additionally, while testing functions, I noticed that some listings may appear under different Districts. Therefore, I need to get neighboorhood data by using latitude and longiture coordinates. I use [geopy](https://pypi.org/project/geopy) library to reverse scrape this information.
 
 The updated scraping plan:
 1. Go through all pages with listings for every district in Toronto to get IDs, apply pricing filter where needed
@@ -30,19 +30,10 @@ The updated scraping plan:
 
 
 
-```markdown
-Syntax highlighted code block
+```
+Code
 
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+![Image](src)
 ```
 
 ## II. Cleaning data
