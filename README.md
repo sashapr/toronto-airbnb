@@ -7,7 +7,7 @@ I would like to understand Airbnb rental market in Toronto and how it is related
 ## Contents
 [I. Scraping data from Airbnb site](#i-scraping-data-from-airbnb-site) <br/>
 [II. Cleaning data](#ii-cleaning-data) <br/>
-[III. Visualizations and analysis](#iii-visualizations-and-analysis) <br/>
+[III. Graphs and analysis](#iii-graphs-and-analysis) <br/>
 
 
 ## I. Scraping data from Airbnb site
@@ -38,7 +38,7 @@ Code
 
 ## II. Cleaning data
 
-## III. Visualizations and data analysis
+## III. Graphs and analysis
 
 
 ----------------------------------------------------
